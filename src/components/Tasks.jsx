@@ -1,17 +1,14 @@
-import React from 'react';
-import Task from './Task';
-import { v4 as uuid4 } from 'uuid4';
+import React from "react";
+import Task from "./Task";
 
-
-
-const Tasks = ({ tasks }) => {
+const Tasks = ({ tasks, handleAddTaskClick }) => {
     return (
     <>
-    {tasks.map(task => (
-    <Task task={task}/>
+    {tasks.map((task) => (
+    <Task task={task} handleTaskClick= {handleAddTaskClick}/>
     ))}
     </>
-    )
-};;
+    );
+};
 
-export default Tasks;
+export default Tasks;           
