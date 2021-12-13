@@ -4,12 +4,18 @@
     padding: 15px 20px;
     display: flex;
     border-radius: 5px;
-    justify-content: space-between;
+    justify-content:space-between;
     color: #eee;
-    align-items: center;
+    align-items:center;
 }
 .task.title{
     cursor: pointer;
+}
+
+.buttons-container{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .remove-task-button, 

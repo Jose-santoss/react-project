@@ -12,16 +12,16 @@ const TaskDetails = () => {
     const handleBackButtonClick = () => {
         history.goBack();
     };
-
+    
     return ( 
         <>
         <div className="back-button-container">
             <Button onClick={handleBackButtonClick}>Voltar</Button>
             </div>
             <div className="task-details-container">
+                </div>
                 <h2>{params.taskTitle}</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur voluptates dignissimos quae rem nesciunt?</p>
-            </div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos autem veniam officiis eos ex.</p>
             </>
      );
 }
