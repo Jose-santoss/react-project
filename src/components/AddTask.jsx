@@ -28,4 +28,5 @@ const AddTask = ({handleTaskAddition}) => {
             </div>   
     );
 };
+
 export default AddTask;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import {v4 as uuidv4} from "uuid";
-import {BrowserRouter as Router, Route} from "react-router-dom"
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import  Header from "./components/Header";
 import Tasks from "./components/Tasks";
@@ -64,6 +64,7 @@ const handleTaskClick  = (taskId) => {
     <Router>
     <div className="container">
       <Header/>
+      <Routes>
       <Route
       path="/" 
       exact
@@ -77,9 +78,13 @@ const handleTaskClick  = (taskId) => {
       </>
         )}
         />
-        <Route path="/:taskTitle" exact component={TaskDetails}/>
+        <Route path="/taskTitle"
+        exact
+        component={TaskDetails}/>
+        </Routes>
       </div>
       </Router>
       );
     }
 export default App;
+  

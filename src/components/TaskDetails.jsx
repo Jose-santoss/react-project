@@ -1,16 +1,17 @@
 import React from 'react';
-import { useHistory, useParams } from 'react-router-dom';
+import {useParams, useNavigate } from 'react-router-dom';
 
 import Button from './Button';
 
 import "./TaskDetails.css";
 
+
 const TaskDetails = () => {
     const params = useParams();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     const handleBackButtonClick = () => {
-        history.goBack();
+        navigate("/TaskDetails");
     };
     
     return ( 
@@ -19,11 +20,11 @@ const TaskDetails = () => {
             <Button onClick={handleBackButtonClick}>Voltar</Button>
             </div>
             <div className="task-details-container">
-                </div>
                 <h2>{params.taskTitle}</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus dignissimos autem veniam officiis eos ex.</p>
-            </>
+                <input>li</input>
+               </div></>
+
      );
-}
- 
+} 
+
 export default TaskDetails;
