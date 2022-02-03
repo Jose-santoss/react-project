@@ -60,6 +60,7 @@ const handleTaskClick  = (taskId) => {
     const newTasks = tasks.filter((task) => task.id !== taskId)
     setTasks(newTasks)
   };
+
   return (
     <Router>
     <div className="container">
@@ -68,7 +69,7 @@ const handleTaskClick  = (taskId) => {
       <Route
       path="/" 
       exact
-      render={() => (
+      render={() => (  //A função "render"
       <>
       <AddTask handleTaskAddition={handleTaskAddition}/>
       <Tasks
@@ -78,7 +79,7 @@ const handleTaskClick  = (taskId) => {
       </>
         )}
         />
-        <Route path="/taskTitle"
+        <Route path=":/taskTitle"
         exact
         component={TaskDetails}/>
         </Routes>

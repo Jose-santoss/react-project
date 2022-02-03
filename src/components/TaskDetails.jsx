@@ -11,7 +11,7 @@ const TaskDetails = () => {
     const navigate = useNavigate();
 
     const handleBackButtonClick = () => {
-        navigate("/TaskDetails");
+        navigate("./TaskDetails");
     };
     
     return ( 
